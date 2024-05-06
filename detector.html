@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETECTOR DE PORCAVALO</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1> DETECTOR DE PORCAVALO </h1>
+    <h2>Você é um PORCAVALO?
+        <p>
+            <button id="btn1" onclick=" janela()">SIM</button>
+            <button id="btn2" onmouseover="changeText(this)" onmouseout="restoreText(this)" onclick="trocar()">NÃO</button>
+            <div id="mentira"></div>
+        </p>
+    </h2>
+    <audio id="risada" src="risada.mp3"></audio>
+    <script src="detector.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    background-image: url("Porcavalo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; /* Removendo margens padrão */
+    padding: 0; /* Removendo preenchimentos padrão */
+}
+
+h1 {
+    background-image: linear-gradient(red, black);
+    color: white;
+    text-align: center;
+    width: 80%; /* Largura ajustável */
+    margin: 0 auto; /* Centralizando horizontalmente */
+    padding: 20px 0; /* Espaçamento interno */
+    margin-bottom: 50%;
+}
+
+h2 {
+    text-align: center;
+    width: 40%; /* Largura ajustável */
+    margin: 20px auto; /* Centralizando horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-image: linear-gradient(to right, red, black);
+    color: white;
+    border-radius: 10px; /* Borda arredondada */
+}
+
+h2 button {
+    display: inline; /* Torna o botão um bloco para ocupar toda a largura */
+    width: 20%; /* Largura total */
+    border: none;
+    padding: 10px;
+    margin-top: 10px; /* Espaçamento superior */
+    cursor: pointer;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 15%;
+    color: white;
+}
+
+h2 button:hover {
+    background: linear-gradient(rgb(198, 0, 0), black);
+}
+
+/* Media Query para dispositivos móveis */
+@media only screen and (max-width: 600px) {
+    h1, h2 {
+        width: 100%; /* Largura total para dispositivos móveis */
+    }
+
+    body {
+        background-position: center; /* Centralizando a imagem em dispositivos móveis */
+    }
+}

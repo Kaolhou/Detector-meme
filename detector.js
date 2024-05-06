@@ -22,7 +22,7 @@ function janela() {
     let novaJanela = window.open("", "", "width=440, height=330");
 
     // Adiciona uma imagem à nova janela
-    novaJanela.document.body.innerHTML = '<img src="Porcavalo2.png">';
+    novaJanela.document.body.innerHTML = '<img src="Porcavalo2.png" class="grande">';
 
     let risada = document.getElementById("risada");
     risada.play()

@@ -2,8 +2,13 @@ body {
     background-image: url("Porcavalo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     margin: 0; /* Removendo margens padrão */
     padding: 0; /* Removendo preenchimentos padrão */
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 h1 {
@@ -13,22 +18,27 @@ h1 {
     width: 100%; /* Largura ajustável */
     margin: 0 auto; /* Centralizando horizontalmente */
     padding: 20px 0; /* Espaçamento interno */
-    margin-bottom: 50%;
 }
-
+div.container{
+    background-image: linear-gradient(to right, red, black);
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+}
 h2 {
     text-align: center;
-    width: 40%; /* Largura ajustável */
-    margin: 20px auto; /* Centralizando horizontalmente */
-    padding: 20px; /* Espaçamento interno */
-    background-image: linear-gradient(to right, red, black);
     color: white;
     border-radius: 10px; /* Borda arredondada */
 }
 
-h2 button {
+#mentira{
+    font-size: larger;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+button {
     display: inline; /* Torna o botão um bloco para ocupar toda a largura */
-    width: 20%; /* Largura total */
     border: none;
     padding: 10px;
     margin-top: 10px; /* Espaçamento superior */
@@ -39,23 +49,10 @@ h2 button {
     border-radius: 15%;
     color: white;
 }
-
-h2 button:hover {
-    background: linear-gradient(rgb(198, 0, 0), black);
+p{
+    margin: 0;
 }
 
-/* Media Query para dispositivos móveis */
-@media only screen and (max-width: 600px) {
-    h1, h2 {
-        width: 100%; /* Largura total para dispositivos móveis */
-    }
-
-    body {
-        background-position: center; /* Centralizando a imagem em dispositivos móveis */
-    }
-
-    .grande {
-        width: 100%; /* Largura da imagem em telas menores */
-        height: auto; /* Altura automática */
-    }
+button:hover {
+    background: linear-gradient(rgb(198, 0, 0), black);
 }
